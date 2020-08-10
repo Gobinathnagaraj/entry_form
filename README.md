@@ -2,5 +2,6 @@
 ## Description
 ### This is student data entry form...!
 #### Screenshot for database
-![Test Image 1](op.png)
-#### Screenshot for pagevie
+![Test Image 1](https://github.com/Gobinathnagaraj/entry_form/blob/master/Opera%20Snapshot_2020-08-10_201821_localhost.jpg)
+#### Screenshot for pageview
+
