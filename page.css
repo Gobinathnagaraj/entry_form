@@ -1,0 +1,39 @@
+html{ 
+    background-color: white;
+}
+form{
+    background-color: #ebdef0;
+    max-width: 40em;
+    max-height: 60em;
+    margin-left: 23em;
+    margin-top: 2em;
+    padding-bottom: 1em;
+}
+label{
+    margin: 1em;   
+}
+table,td,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-style:groove;
+    padding: .5em;
+}
+table{
+    margin-left: 8em;
+}
+#name{
+    margin-left: 1.4em;
+}
+#scl{
+    margin-left: 1em;
+}
+#age{
+    margin-left: 2.4em;
+}
+#gen{
+    margin-left: 1em;
+}
+#sub,#res{
+    float: right;
+    margin-top: 1em;
+}
