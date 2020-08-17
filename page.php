@@ -1,16 +1,15 @@
 <?php
-<?php
 $dsn = 'mysql:host=localhost;dbname=student';
 $username = 'root';
 $password = '';
 
 try {
-    $db = new PDO($dsn, $username, $password, $dbname);
+    $db = new PDO($dsn, $username, $password);
     } 
 catch (PDOException $e) 
 {
     $error_message = $e->getMessage();
-    echo $conn->$error_message;
+    echo $db->$error_message;
     exit();
 }
 //inserting data
@@ -23,14 +22,11 @@ if(isset($_POST['submit']))
     if($name !='' && $age !='' && $school !='')
     {
     $query = "INSERT INTO stu (name, age, scl) VALUE(?,?,?)";
-    }
-    if($conn->query($sql) === TRUE)
-    {
-      $stmt = $conn->prepare($query);
-      $stmt->execute([$name, $age, $school]);
-      echo 'data stored';
+    $stmt = $db->prepare($query);
+    $stmt->execute([$name, $age, $school]);
+    echo 'data stored';
     }
     else{
-        echo 'insert data fail'. $query."<br>".$conn->$e;
+        echo 'insert data fail'. $query."<br>".$db->$e;
     }
     
